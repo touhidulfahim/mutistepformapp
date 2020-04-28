@@ -60,16 +60,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\StudentModel.cs" />
+    <Compile Include="Context\MultiStepFormAppDbContext.cs" />
+    <Compile Include="Migrations\202004280949571_AddStudentModels.cs" />
+    <Compile Include="Migrations\202004280949571_AddStudentModels.Designer.cs">
+      <DependentUpon>202004280949571_AddStudentModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\StudentViewModel.cs" />
+    <Compile Include="Repository\StudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interface\" />
+    <ProjectReference Include="..\MultiStepForm.Domain\MultiStepForm.Domain.csproj">
+      <Project>{e6d3af0d-5ed1-4ecb-a193-bae803245a2e}</Project>
+      <Name>MultiStepForm.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202004280949571_AddStudentModels.resx">
+      <DependentUpon>202004280949571_AddStudentModels.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

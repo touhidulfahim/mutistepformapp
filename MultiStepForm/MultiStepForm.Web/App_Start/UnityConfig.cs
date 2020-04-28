@@ -1,5 +1,6 @@
 using System;
-
+using MultiStepForm.Data.Repository;
+using MultiStepForm.Domain.Interface;
 using Unity;
 
 namespace MultiStepForm.Web
@@ -42,6 +43,7 @@ namespace MultiStepForm.Web
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<IStudent, StudentRepository>();
         }
     }
 }

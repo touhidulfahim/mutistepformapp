@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MultiStepForm.Data.Entities
+namespace MultiStepForm.Domain.Entities
 {
     [Table("tb_Student")]
     public class StudentModel
@@ -17,6 +13,8 @@ namespace MultiStepForm.Data.Entities
         public string FathersName { get; set; }
         public string MothersName { get; set; }
         public DateTime DateOfBirth { get; set; }
-
+        public string Age { get; set; }
+        public string MobileNo { get; set; }
+        public string RegistrationNo { get; set; }
     }
 }
