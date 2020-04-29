@@ -60,9 +60,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AddressModel.cs" />
+    <Compile Include="Entities\CourseInfoModel.cs" />
+    <Compile Include="Entities\DepartmentModel.cs" />
+    <Compile Include="Entities\StudentCourseModel.cs" />
     <Compile Include="Entities\StudentModel.cs" />
+    <Compile Include="Interface\IAddress.cs" />
+    <Compile Include="Interface\ICourse.cs" />
+    <Compile Include="Interface\IDepartment.cs" />
     <Compile Include="Interface\IStudent.cs" />
+    <Compile Include="Interface\IStudentCourse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AddressViewModel.cs" />
+    <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentViewModel.cs" />
+    <Compile Include="ViewModels\StudentCourseViewModel.cs" />
     <Compile Include="ViewModels\StudentViewModel.cs" />
   </ItemGroup>
   <ItemGroup />

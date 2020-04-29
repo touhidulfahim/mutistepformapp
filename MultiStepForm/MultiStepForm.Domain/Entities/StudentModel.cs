@@ -16,5 +16,8 @@ namespace MultiStepForm.Domain.Entities
         public string Age { get; set; }
         public string MobileNo { get; set; }
         public string RegistrationNo { get; set; }
+        public int DepartmentId { get; set; }
+        [ForeignKey("DepartmentId")]
+        public virtual DepartmentModel DepartmentInfo { get; set; }
     }
 }

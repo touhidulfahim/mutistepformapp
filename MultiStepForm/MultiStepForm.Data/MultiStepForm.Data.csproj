@@ -65,8 +65,20 @@
     <Compile Include="Migrations\202004280949571_AddStudentModels.Designer.cs">
       <DependentUpon>202004280949571_AddStudentModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004291054170_AddCourseDepartmentAddressModels.cs" />
+    <Compile Include="Migrations\202004291054170_AddCourseDepartmentAddressModels.Designer.cs">
+      <DependentUpon>202004291054170_AddCourseDepartmentAddressModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004292203295_AppliedOverRiddenMethodInApplicationDbContextFile.cs" />
+    <Compile Include="Migrations\202004292203295_AppliedOverRiddenMethodInApplicationDbContextFile.Designer.cs">
+      <DependentUpon>202004292203295_AppliedOverRiddenMethodInApplicationDbContextFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AddressRepository.cs" />
+    <Compile Include="Repository\CourseRepository.cs" />
+    <Compile Include="Repository\DepartmentRepository.cs" />
+    <Compile Include="Repository\StudentCourseRepository.cs" />
     <Compile Include="Repository\StudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +95,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004280949571_AddStudentModels.resx">
       <DependentUpon>202004280949571_AddStudentModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004291054170_AddCourseDepartmentAddressModels.resx">
+      <DependentUpon>202004291054170_AddCourseDepartmentAddressModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004292203295_AppliedOverRiddenMethodInApplicationDbContextFile.resx">
+      <DependentUpon>202004292203295_AppliedOverRiddenMethodInApplicationDbContextFile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

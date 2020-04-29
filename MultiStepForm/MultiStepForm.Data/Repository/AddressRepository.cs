@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using MultiStepForm.Data.Context;
 using MultiStepForm.Domain.Interface;
-using MultiStepForm.Domain.ViewModels;
 
 namespace MultiStepForm.Data.Repository
 {
-    public class StudentRepository:IStudent
+    public class AddressRepository:IAddress
     {
         private readonly MultiStepFormAppDbContext _context;
         private bool _disposed = false;
@@ -30,21 +29,6 @@ namespace MultiStepForm.Data.Repository
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-
-        public IEnumerable<StudentViewModel> GetStudentList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int? InsertStudent(StudentViewModel student)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int? UpdateStudent(StudentViewModel student)
-        {
-            throw new NotImplementedException();
         }
     }
 }
