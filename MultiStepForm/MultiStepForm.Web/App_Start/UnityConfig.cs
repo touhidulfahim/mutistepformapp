@@ -48,6 +48,9 @@ namespace MultiStepForm.Web
             container.RegisterType<IDepartment, DepartmentRepository>();
             container.RegisterType<ICourse, CourseRepository>();
             container.RegisterType<IStudentCourse, StudentCourseRepository>();
+            container.RegisterType<ICategory, CategoryRepository>();
+            container.RegisterType<IMovie, MovieRepository>();
+            container.RegisterType<IMovieCategory, MovieCategoryRepository>();
         }
     }
 }
